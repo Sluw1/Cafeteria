@@ -1,0 +1,134 @@
+:root {
+    --primary-brown: #8B4513;
+    --accent-gold: #FFD700;
+    --cream: #FFF8DC;
+    --text-dark: #333;
+    --text-light: #fff;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--cream);
+    color: var(--text-dark);
+}
+
+header {
+    background: var(--primary-brown);
+    padding: 1rem;
+}
+
+.logo {
+    color: var(--accent-gold);
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hamburguer {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 1rem;
+}
+.nav-collapsed {
+    width: 100%;
+    display: block;
+}
+
+.nav-collapsed.collapsed {
+    display: none;
+}
+
+.banner {
+    background: url("../images/banner.jpg") center/cover no-repeat;
+    text-align: center;
+    padding: 4rem 1rem;
+    color: var(--text-light);
+}
+
+.grid-produtos { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+    justify-content: center; 
+    
+}
+
+.produto { 
+    flex: 1 1 300px; 
+    max-width: 350px; 
+    background: white; 
+    padding: 1rem; 
+    border-radius: 8px; 
+    align-items: center;
+}
+
+
+.produto img { 
+    width: 100%; 
+    border-radius: 5px;
+}
+
+.preco {
+    color: var(--primary-brown);
+    font-weight: bold;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.ia {
+    text-align: Center;
+}
+
+@media (min-width: 481px) {
+    .container {
+        padding: 2rem;
+    }
+    .hamburguer {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .hamburguer {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+}
